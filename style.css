@@ -1,0 +1,90 @@
+body,
+h1,
+h2,
+h3,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d4e4d6;
+    padding: 20px;
+}
+
+header,
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #33475b;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ol,
+ul {
+    padding-left: 20px;
+}
+
+footer p {
+    font-style: italic;
+    color: #10157c;
+}
+
+/* Dark theme */
+.dark-theme {
+    background-color: #222; /* Dark background */
+    color: #fff;
+}
+
+.dark-theme header,
+.dark-theme footer {
+    background-color: #33475b;
+}
+
+.dark-theme section {
+    background-color: #333;
+}
+
+.dark-theme .section-content {
+    color: #fff;
+}
+
+/* Toggle button styling */
+#toggle-theme,
+#print-btn {
+    position: fixed;
+    padding: 10px;
+    background-color: #33475b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#toggle-theme:hover,
+#print-btn:hover {
+    background-color: #1e2a38;
+}
+
+#toggle-theme {
+    top: 20px;
+    right: 20px;
+}
+
+#print-btn {
+    top: 60px;
+    right: 20px;
+}
