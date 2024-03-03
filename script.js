@@ -9,12 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Section toggle functionality
-    sectionHeadings.forEach((heading) => {
+    document.querySelectorAll("h2.section-heading").forEach((heading) => {
         heading.addEventListener("click", function () {
-            this.nextElementSibling.classList.toggle("show-section");
+            this.parentElement.classList.toggle("show-section");
         });
     });
-
     // Print button functionality
     printButton.addEventListener("click", function () {
         window.print();
