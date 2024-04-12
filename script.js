@@ -1,4 +1,6 @@
 const url = 'https://aeona3.p.rapidapi.com/?text=%3CREQUIRED%3E&userId=12312312312';
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+
 const options = {
     method: 'GET',
     headers: {
@@ -16,7 +18,7 @@ async function sendMessage() {
     chatDisplay.innerHTML += userMessage;
 
     try {
-        const response = await fetch(url + '&text=' + userInput, options);
+        const response = await fetch(proxyUrl + url + '&text=' + userInput, options);
         const result = await response.text();
         const botMessage = `<div class="message bot">${result}</div>`;
         chatDisplay.innerHTML += botMessage;
